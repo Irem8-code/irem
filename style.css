@@ -1,0 +1,848 @@
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
+html
+{
+    scroll-behavior: smooth;
+     outline: 1px solid red !important;
+     overflow-x: hidden ;
+
+}
+body
+{
+    overflow-x: hidden ;
+    margin: 0;
+    padding: 0;
+  
+}
+*
+{
+    margin: 0;
+    padding: 0;
+      
+}
+.genel1
+{
+    position: relative;
+    height: 100vh;
+}
+
+.genel1 img
+{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    filter: brightness(40%);
+    position: absolute;
+}
+ .genel1 h4
+{
+    
+  position: absolute;
+  top: 30%;          /* dikey ortalama */
+  left: 50%;         /* yatay ortalama */
+  transform: translate(-50%, -50%); /* tam ortalama */
+  color: white;
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  text-align: center;
+}
+.genel1 p
+{
+  position: absolute;
+  top: 46%;          /* dikey ortalama */
+  left: 50%;         /* yatay ortalama */
+  transform: translate(-50%, -50%); /* tam ortalama */
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 28px;
+  color: white;
+  letter-spacing: 3px;
+  text-spacing-trim: space-all;
+  word-spacing: 3px;
+  text-align:center;
+}
+.genel1 button
+{
+    position:absolute;
+    top:65%;          /* dikey ortalama */
+    left: 50%;         /* yatay ortalama */
+    transform: translate(-50%, -50%); /* tam ortalama */
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: white;
+    color: #607456;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    letter-spacing: 2.5px;
+    font-weight: lighter;
+    border: 1px solid #607456;
+    cursor: pointer;
+    transition: 1.4s ease;
+}
+.genel1 button:hover
+{
+    background-color: #607456;
+    color: white;
+    border: white 1px solid;
+
+}
+.genel2{
+   
+    background-color: #EEE0CC;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.genel2 .satir1,
+.genel2 .satir2{
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
+
+.genel2 .satir1{
+    padding-top: 50px;
+}
+
+.genel2 .satir2{
+    margin-top: 50px;
+}
+
+.kategori{
+  
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+
+.kategori img{
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50px;
+    filter: brightness(70%);
+    display: block;
+    transition: transform .7s ease;
+}
+
+.kategori p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 25px;
+    font-family: "Playfair Display SC", serif;
+    text-align: center;
+    width: 85%;
+    z-index: 2;
+    transition: transform .7s ease;
+}
+
+.kategori:hover img{
+    transform: scale(1.08);
+}
+
+.kategori:hover p{
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.kategori a{
+    text-decoration: none;
+    display: block;
+}
+.genel3
+{
+    
+    background-color: #EEE0CC;
+}
+.genel3 .satir1,
+.genel3 .satir2{
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
+
+.genel3 .satir1{
+    padding-top: 50px;
+}
+
+.genel3 .satir2{
+    margin-top: 50px;
+}
+
+.genel3 .kategori{
+ 
+position: relative;
+
+}
+
+.genel3 .kategori img{
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50px;
+    filter: brightness(70%);
+    display: block;
+    transition: transform .7s ease;
+    
+}
+
+.genel3 .kategori p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Playfair Display SC", serif;
+    z-index: 2;
+    transition: transform .7s ease;
+}
+
+.genel3 .kategori:hover img{
+    transform: scale(1.08);
+}
+
+.genel3 .kategori:hover p{
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.genel3 .kategori a{
+    display: block;
+    text-decoration: none;
+}
+.slider {
+  display: flex;
+  width: 200vw; /* sadece genel2 ve genel3 */
+  transition: transform 0.8s ease;
+   position: relative;
+  overflow: hidden; /* tuşların dışarı taşmasını engeller */
+}
+
+.genel2,
+.genel3{
+    width:100vw;
+    height:115vh;
+    flex-shrink:0;
+    position:relative;
+}
+.genel4
+{
+    background-color: rgba(96, 116, 86,0.9);
+    background-size: 100% 100%;
+    position: relative;
+    height: 100vh;
+}
+.genel4 .box
+{
+    width: 350px;
+    height: 300px;
+    background-color: black;
+    color: white;
+}
+.genel4 .sat1,
+.genel4 .sat2{
+    display: flex;
+    justify-content: center;
+  
+}
+.genel4 .sat1{
+    padding-top: 65px;
+}
+.genel4 .box
+{
+    background: none;
+    display: flex;
+    flex-direction: column; /* h4 üstte, p altta */
+    justify-content: center; /* dikey ortala */
+    align-items: center;     /* yatay ortala */
+    text-align: center;
+    
+
+}
+.genel4 .box h3
+{
+    margin-bottom: 15px;
+    font-family: "Playfair Display SC", serif;
+}
+.genel4 .box p
+{
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: lighter;
+    line-height: 21px;
+    padding: 5px;
+}
+.genel4 #box1
+{
+    border-right: 3px solid #EEE0CC;
+    border-bottom:3px solid #EEE0CC ;
+}
+.genel4 #box2
+{
+    border-right: 3px solid #EEE0CC;
+    border-bottom:3px solid #EEE0CC ;
+}
+.genel4 #box3
+{
+   
+    border-bottom:3px solid #EEE0CC ;
+}
+.genel4 #box4
+{
+    border-right: 3px solid #EEE0CC;
+    
+}
+.genel4 #box5
+{
+    border-right: 3px solid #EEE0CC;
+    
+}
+#ileri1,
+#ileri2{
+    right: 70px;
+}
+
+#geri1,
+#geri2{
+    left: 70px;
+}
+.oklar{
+    position: absolute;
+    top: 48%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.oklar button{
+    pointer-events: auto;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background: #607456;
+    color: white;
+    font-size: 17px;
+    border: white 2px solid;
+    cursor: pointer;
+    transition: 0.8s ease;
+}
+.oklar button:hover
+{
+   background-color:  #EEE0CC;
+   color: #607456;
+   border: 2px solid #607456;
+}
+
+
+.genel5
+{
+    background-color: #EEE0CC;
+    background-size: 100% 100%;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.genel5 .icerik
+{
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-105px);
+}
+.text
+{
+    text-align: center;
+    margin-top: 170px;
+}
+.genel5 .text h1
+{
+    color: #607456;
+    letter-spacing: 3px;
+    padding-bottom: 25px;
+    font-size: 38px;
+}
+.genel5 .text p
+{
+    font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 25px;
+  justify-content: center;
+  line-height: 32px;
+}
+
+.arama
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px;
+}
+ .genel5 input
+{
+    width:550px;
+    height: 37px;
+    border-radius: 50px;
+    border:rgb(96, 116, 86, 0.4) solid 2.5px ;
+    padding-left: 10px;
+   
+}
+.genel5  .arama button
+{
+    width: 55px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(96, 116, 86, 0.4);
+    transition: 0.8s ease;
+    border:rgb(96, 116, 86, 0.4) solid 2.5px ;
+}
+.genel5 .arama button:hover
+{
+    background-color: rgb(96, 116, 86);
+     border:rgb(96, 116, 86, 0.4) solid 2.5px ;
+   
+}
+ .genel5 input[type="text"]:focus  /*tıklanınca olaylar*/
+ {
+  border: 2.5px solid #607456;   
+  outline: none;          
+}
+.genel5 .btn1
+{
+   text-decoration: none;
+   width: 200px;
+   height: 50px;
+   margin-top: 30px;
+   border-radius: 8px; 
+   margin-right: 65px;
+   color: white;
+   font-family:sans-serif ;
+   font-size: 14px;
+    background-color: rgb(96, 116, 86);
+    transition: 0.8s ease;
+    border:rgb(96, 116, 86, 0.4) solid 2.5px ;
+    transition: 0.8s ease;
+}
+.genel5 .btn2
+{
+   text-decoration: none;
+   width: 200px;
+   height: 50px;
+   margin-top: 30px;
+   border-radius: 8px; 
+    color: white;
+   font-family:sans-serif ;
+   font-size: 14px;
+    background-color: rgb(96, 116, 86);
+    transition: 0.8s ease;
+    border:rgb(96, 116, 86, 0.4) solid 2.5px ;
+    transition: 0.8s ease;
+}
+.genel5 .btn2:hover, .btn1:hover
+{
+    color: black;
+    background-color:rgba(96, 116, 86, 0.4)  ;
+    border: 2px solid #607456;
+}
+.genel5 .populer h4
+{
+    font-size: 25px;
+    text-align: center;
+    padding: 35px;
+    font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: 3px;
+  
+
+}
+.genel5 .populer img
+{
+    width: 220px;
+    height: 220px;
+    border-radius: 15px;
+   
+    
+}
+.genel5 .populer .pop
+{
+    display: flex;
+    gap: 15px;
+}
+.genel5 .populer .kart
+{
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.genel5 .populer .kart:hover
+{
+   border: #607456 2px solid;
+}
+
+
+.genel5 .populer .overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 224px;
+    height: 224px;
+    background:rgb(96, 116, 86, 0.4);
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    opacity: 0;
+    transition: .4s;
+    letter-spacing: 2px;
+}
+
+.genel5 .populer .kart:hover .overlay
+{
+    opacity: 1;
+}
+
+.genel5 .populer .kart img
+{
+    transition: .8s;
+   
+}
+
+.genel5 .populer .kart:hover img
+{
+    transform: scale(1.08);
+    
+}
+.genel6
+{
+    background-color: #607456;
+    background-size: 100% 100%;
+    position: relative;
+    height: 100vh;
+}
+
+.genel6 h1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     letter-spacing: 3.5px;
+    padding-top: 55px;
+    font-size: 38px;
+    color: #EEE0CC;
+}
+.genel6 .box img
+{
+    width: 250px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    cursor: pointer;
+     border: 2px solid black;
+    
+}
+.genel6 .box #patron
+{
+    float: left;
+    margin-left:60px;
+    margin-right: 35px;
+   
+    
+}
+.genel6 .box #k1
+{
+    float: left;
+    margin-right: 35px;
+}
+.genel6 .box #e1
+{
+    float: left;
+    margin-right: 35px;
+}
+.genel6 .box #k2
+{
+    float: left;
+    margin-right: 35px;
+   
+}
+.genel6 .box #e2
+{
+    float: left;
+    
+}
+.genel6 .box
+{
+   margin-top: 55px;
+  
+   
+}
+.genel6 .bilgi
+{
+    width: 250px;
+    height: 57px;
+    background-color: #EEE0CC;
+    color: #607456;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: -10px;
+    position: absolute;
+    z-index: 1;
+    border-radius: 0 0 15px 15px;
+    text-align: center;
+    padding-top: 17px;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+    border-right: solid 2px black;
+    border-left: 2px solid black;
+}
+
+.genel7
+{
+    background-color: #EEE0CC;
+    background-size: 100% 100%;
+    position: relative;
+    height: 100vh;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;  
+}
+.genel7 .kayit
+{
+    width: 600px;
+    height: 80vh;
+    background-color: rgb(96, 116, 86);
+    text-align: center;
+    border-radius: 15px;
+}
+.genel7 .oturum
+{
+    width: 600px;
+    height: 80vh;
+    background-color: rgb(96, 116, 86);
+    text-align: center;
+    border-radius: 15px;
+}
+.genel7 h1
+{
+    color: #EEE0CC;
+    font-family: "Playfair Display SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px;
+}
+.genel7 .inf input
+{
+    width:450px;
+    height: 37px;
+    border-radius: 50px;
+    border:rgb(96, 116, 86, 0.4) solid 2.5px ;
+    padding-left: 10px;
+    margin-bottom: 25px;
+    
+}
+ .genel7 input[type="text"]:focus  /*tıklanınca olaylar*/
+ {
+    border: 2.5px solid #607456;   
+    outline: none;  
+    background-color: #EEE0CC;        
+}
+.genel7 #ad
+{
+    margin-top: 15px;
+}
+.genel7 label
+{
+    font: size 17px;
+}
+.genel7 #sfr2
+{
+    margin-bottom: 35px;
+}
+.genel7 button
+{
+   text-decoration: none;
+   width: 175px;
+   height: 35px;
+   margin-top: 30px;
+   border-radius: 8px; 
+   color: #607456;
+   font-family:sans-serif ;
+   font-size: 14px;
+   background-color: #EEE0CC;
+   transition: 0.8s ease;
+   cursor: pointer;
+   border: none;
+}
+.genel7  button:hover
+{
+    background-color: white;
+    color: #607456;  
+}
+.genel7 p
+{
+    letter-spacing: 1px;
+    transition: 2s ease;
+    cursor: pointer;
+}
+.genel7 p:hover
+{
+    color: #EEE0CC;
+}
+
+
+.genel8
+{
+    background-color:rgb(96, 116, 86, 0.8);
+    background-size: 100% 100%;
+    position: relative;
+    height: 70vh;
+    
+ 
+}
+.genel8  .box1 h4
+{
+
+  color: #EEE0CC;
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  margin-bottom: 15px;
+  letter-spacing: 7px;
+ 
+  
+}
+.genel8 .box1
+{
+    width: 250px;
+    height: 280px;
+    letter-spacing: 2.1px;
+    font-family: "Playfair Display SC", serif;
+    color: #EEE0CC;
+    font-weight: 400;
+    font-style: normal;
+    background:none;
+    text-align:center;
+    float:left;
+    margin-top: 75px;
+    margin-left: 200px;
+ 
+}
+
+.genel8 .box3
+{
+    width: 350px;
+    height: 280px;
+    font-family: sans-serif;
+    font-style: normal;
+    background:none;
+    text-align:left;
+    float:left;
+    margin-top: 75px;
+    margin-left: 150px;
+   
+
+   
+ 
+}
+.genel8  .box3 h4
+{
+
+  color: white;
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 3.5px;
+
+}
+.genel8 .box3 li
+{
+    list-style: none;
+    line-height: 25px;
+    color: white;
+    margin-bottom: 10px;
+    
+}
+.genel8 ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.genel8 a
+{
+    text-decoration: none;
+    color: white;
+    transition: .4s ease;
+}
+.genel8 span
+{
+    color: #EEE0CC;
+    margin-right: 10px;
+}
+.genel8 a:hover
+{
+    color: #EEE0CC;
+    letter-spacing: 2px;
+}
+.genel8 img
+{
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 55px;
+    margin-left: 15px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.7);
+    transition: transform 0.5s ease;
+}
+.genel8 img:hover
+{
+   cursor: pointer;
+    transform: scale(1.02);
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+

@@ -1,0 +1,481 @@
+html
+{
+    scroll-behavior: smooth;
+     overflow-x: hidden ;
+
+}
+body
+{
+    overflow-x: hidden ;
+    margin: 0;
+    padding: 0;
+    background-color: #EEE0CC;
+  
+}
+*
+{
+    margin: 0;
+    padding: 0;
+      
+}
+.geri{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 40px;
+    margin-left: 50px;
+    color: #607456;
+    text-decoration: none;
+}
+.geri svg{
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
+.genel1 span
+{
+    font-size: 17px;
+}
+ .genel1 h4
+{
+    
+  position: absolute;
+  top: 10%;          /* dikey ortalama */
+  left: 50%;         /* yatay ortalama */
+  transform: translate(-50%, -50%); /* tam ortalama */
+  color: #607456;
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  text-align: center;
+}
+ .genel1 h5
+{
+    
+  position: absolute;
+  top: 20%;          /* dikey ortalama */
+  left: 50%;         /* yatay ortalama */
+  transform: translate(-50%, -50%); /* tam ortalama */
+  color: #607456;
+  font-family: "Playfair Display SC", serif;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 55px;
+  text-align: center;
+}
+ .genel1 h6
+{
+    
+  position: absolute;
+  top: 25%;          /* dikey ortalama */
+  left: 50%;         /* yatay ortalama */
+  transform: translate(-50%, -50%); /* tam ortalama */
+  color: #607456;
+  font-family: "Playfair Display SC", serif;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 25px;
+  text-align: center;
+}
+.genel1 .slogan 
+{
+    position: absolute ;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(31, 31, 31);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+.genel1 img
+{
+    width: 500px;
+    height: 390px;
+    position: absolute;
+    top: 40%;
+    left:16%;
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+.inf
+{
+    width: 500px;
+    height: 390px;
+    position: absolute;
+    top: 40%;
+    left: 52%;
+    border-radius: 20px;
+    background:none;
+    border: 2px solid #607456;
+
+}
+.inf .yazi
+{
+    margin-top: 21px;
+    font-size:25px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    
+}
+.inf1 svg
+{
+    width: 30px;
+    height: 30px;
+    
+}
+ .inf1 .yazi .dk
+{
+    font-size:20px;
+    margin-left:46px;
+}
+.inf1 .ikon
+{
+    margin-left: 95px;
+    margin-top:15px;
+    margin-right: 17px;
+    float: left;
+    
+}
+.inf .inf1
+{
+    border-bottom: #607456 solid 2px;
+    margin-right: 30px;
+    margin-left: 30px; 
+}
+
+
+.inf2 .ikon
+{
+    margin-left:95px;
+    margin-top:15px;
+    margin-right: 30px;
+    float: left;
+    
+}
+.inf .inf2
+{
+    border-bottom: #607456 solid 2px;
+    margin-left:30px;
+    margin-right: 30px;
+    
+}
+.inf2 svg
+{
+    width: 35px;
+    height: 35px;
+    
+}
+ .inf2 .yazi .dk
+{
+    font-size:20px;
+    margin-left:32px;
+}
+
+
+.inf3 .ikon
+{
+    margin-left:95px;
+    margin-top:15px;
+    margin-right: 50px;
+    float: left;
+    
+}
+.inf .inf3
+{
+    border-bottom: #607456 solid 2px;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+.inf3 svg
+{
+    width: 35px;
+    height: 35px;
+    
+}
+ .inf3 .yazi .dk
+{
+    font-size:20px;
+    margin-left:17px;
+}
+
+
+.inf4 .ikon
+{
+    margin-left:95px;
+    margin-top:15px;
+    margin-right: 20px;
+    float: left;
+    
+}
+.inf .inf4
+{
+    
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+.inf4 svg
+{
+    width: 35px;
+    height: 35px;
+}
+ .inf4 .yazi .dk
+{
+    font-size:20px;
+    margin-left:60px;
+}
+.genel1 .ing
+{
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    top: 100%;
+    left:16%;
+    background: none;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(96, 116, 86, 0.5);
+}
+.ing .ikon1 svg
+{
+    width: 55px;
+    height: 45px;
+}
+.ing .ikon1
+{
+    margin-left: 50px;
+    margin-top:25px;
+    margin-right: 17px;
+    float: left;
+}
+.ing h2
+{
+   position: absolute;
+   top: 7.5%;
+   left: 52%;
+   transform: translate(-50%, -50%); /* tam ortalama */
+   color: #607456;
+   font-family: "Playfair Display SC", serif;
+   font-weight: 400;
+   font-style: normal;
+   text-align: center;
+   border-bottom: double rgba(96, 116, 86, 0.4);
+   padding-bottom: 3px;
+}
+.liste ul{
+    list-style: none;
+    padding-left: 15px;
+    padding-top: 30px;
+}
+
+.liste li::before{
+    content: "□";
+    color: #607456;
+    margin-right: 10px;
+}
+.liste li
+{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.ikon2 svg
+{
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: 80%;
+    left: 33%;
+    opacity: 0.50;
+}
+
+.genel1 .tarif
+{
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 100%;
+    left:46%;
+    background: none;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(96, 116, 86, 0.5);
+}
+.ikon3 svg
+{
+   width: 40px;
+   height: 40px;
+   position: absolute;
+   left: 20%;
+   top: 4%;
+}
+.tarif h2
+{
+   position: absolute;
+   top: 7.5%;
+   left: 52%;
+   transform: translate(-50%, -50%); /* tam ortalama */
+   color: #607456;
+   font-family: "Playfair Display SC", serif;
+   font-weight: 400;
+   font-style: normal;
+   text-align: center;
+   border-bottom: double rgba(96, 116, 86, 0.4);
+   padding-bottom: 3px;
+}
+#adim li
+{
+width: 25px;
+height: 25px;
+background-color: #607456;
+border-radius: 100%;
+list-style: none;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+float: left;
+margin-right: 10px;
+margin-top: 5px;
+}
+.adim1
+{
+    position: absolute;
+    top: 15%;
+    left: 8%;
+    right: 8%;
+    border-bottom: 2px solid rgba(96, 116, 86, 0.4);
+    padding-bottom: 15px;
+}
+
+
+.adim2
+{
+    position: absolute;
+    top: 27%;
+    left: 8%;
+    right: 8%;
+    border-bottom: 2px solid rgba(96, 116, 86, 0.4);
+    padding-bottom: 15px;
+}
+
+
+.adim3
+{
+    position: absolute;
+    top: 39%;
+    left: 8%;
+    right: 8%;
+    border-bottom: 2px solid rgba(96, 116, 86, 0.4);
+    padding-bottom: 15px;
+}
+
+.adim4
+{
+    position: absolute;
+    top: 51%;
+    left: 8%;
+    right: 8%;
+    border-bottom: 2px solid rgba(96, 116, 86, 0.4);
+    padding-bottom: 15px;
+}
+
+.adim5
+{
+    position: absolute;
+    top: 63%;
+    left: 8%;
+    right: 8%;
+    border-bottom: 2px solid rgba(96, 116, 86, 0.4);
+    padding-bottom: 15px;
+}
+.adim6
+{
+    position: absolute;
+    top: 75%;
+    left: 8%;
+    right: 8%;
+    border-bottom: 2px solid rgba(96, 116, 86, 0.4);
+    padding-bottom: 15px;
+}
+.adim7
+{
+    position: absolute;
+    top: 87%;
+    left: 8%;
+    right: 8%;
+    
+    padding-bottom: 15px;
+}
+.puf
+{
+    position: absolute;
+    top: 195%;
+    left: 50.5%;
+    transform: translate(-50%, -50%);
+    width: 1055px;
+    height: 115px;
+    background-color: rgba(106, 127, 97, 0.3);
+    border-radius: 20px;
+    border: 1px solid #607456;
+
+}
+.puf  .icon svg
+{
+    width: 40px;
+    height: 40px;
+}
+.puf .icon
+{
+    width: 60px;
+    height: 60px;
+    background-color: #607456;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    left: 7%; 
+}
+.puf h1
+{
+    font-size: 22px;
+    font-family: "Playfair Display SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #607456;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+}
+.puf p
+{
+    font-size: 15px;
+   font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 400;
+    color: black;
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    letter-spacing: 2px;
+}
+.puf .icon2 svg
+{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 15%;
+    left: 80%;
+    transform: rotate(-48deg);
+}
+
+
+
+
+
